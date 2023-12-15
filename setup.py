@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import sys
 from admin_honeypot import __version__, __description__, __license__
 
 try:
@@ -17,6 +16,7 @@ setup(
         'Framework :: Django',
         'Framework :: Django :: 2.2',
         'Framework :: Django :: 3.0',
+        'Framework :: Django :: 4.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
@@ -27,8 +27,10 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
-        ],
+    ],
     keywords='django admin honeypot trap',
     maintainer='Derek Payton',
     maintainer_email='derek.payton@gmail.com',
@@ -40,5 +42,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'django-ipware',
+        "pygeoip",
+        "ipaddress"
     ]
 )

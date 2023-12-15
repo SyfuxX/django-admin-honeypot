@@ -5,8 +5,9 @@ Installation
 Requirements
 ============
 
-* Python 3.5+
-* Django 2.2+
+* Python 3.10+
+* Django 4.2+
+* Pygeoip
 
 Install
 =======
